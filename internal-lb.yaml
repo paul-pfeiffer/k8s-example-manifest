@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: internal-app
+  name: my-nginx
   annotations:
     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 spec:
@@ -10,4 +10,4 @@ spec:
   ports:
   - port: 80
   selector:
-    app: internal-app
+    app: my-nginx
