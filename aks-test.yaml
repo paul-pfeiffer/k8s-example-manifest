@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: testdeployment
+  name: aks-tests
+  labels:
+    app: aks-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aks-test
+  template:
+    metadata:
+      labels:
+        app: aks-test
+    spec:
+      containers:
+      - name: aks-test
+        image: oebbacrcoresbxweu.azurecr.io/akstest:1630
+        ports:
+        - containerPort: 80
