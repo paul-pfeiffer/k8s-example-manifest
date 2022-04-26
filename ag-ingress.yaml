@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ag-ingress
+  name: aks-test
   annotations:
     kubernetes.io/ingress.class: azure/application-gateway
 spec:
@@ -10,6 +10,6 @@ spec:
       paths:
       - backend:
           service:
-            name: my-nginx
+            name: aks-test
             port:
               number: 80
