@@ -8,8 +8,10 @@ spec:
   rules:
   - http:
       paths:
-      - backend:
-          service:
+      - path: /
+        pathType: Prefix
+        backend:
+         service:
             name: aks-test
             port:
               number: 80
