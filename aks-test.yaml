@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: aks-test
-        image: oebbacrcoresbxweu.azurecr.io/akstest:1630
+        image: oebbacrcoresbxweu.azurecr.io/akstest:latest
         ports:
         - containerPort: 80
