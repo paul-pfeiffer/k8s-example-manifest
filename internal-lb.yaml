@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: testdeployment
   name: my-nginx
   annotations:
     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
