@@ -14,6 +14,8 @@ spec:
   # type: LoadBalancer
   ports:
   - port: 80
+    protocol: TCP
+    targetPort: 80
   selector:
     app: aks-test
     tier: aks-test
