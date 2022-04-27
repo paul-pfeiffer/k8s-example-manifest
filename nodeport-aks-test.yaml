@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: testdeployment
   name: aks-test
   labels:
     app: aks-test
